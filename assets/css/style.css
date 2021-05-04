@@ -1,38 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
 body {
-    background-color: rgba(30, 30, 30, 1);
+    background-color: rgb(255, 110, 236);
 }
 
-.welcome {
+.main {
+    display: flex;
+    width: 100%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    font-family: 'Inter', sans-serif;
+    font-size: 6vmin;
+    text-align: right;
     color: white;
-    font-family: 'Open Sans';
-    font-size: 100px;
-    margin-top: -100px;
+
+    width: 90%;
+    height: 40%;
+}
+
+h1 {
+    padding: 5px;
+}
+
+.question-main {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    text-align: center;
-    min-height: 100vh;
+    justify-content: safe;
 }
 
-.character {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    max-width: 60%;
-    transition: transform 800ms cubic-bezier(0.78, 0, 0.16, 0.99);
+.question {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: min(900px, 80%);
+
+    padding: 30px;
+    text-align: left;
 }
 
-.character:hover {
-    transform: translateY(-20px) scale(1.05);
+a {
+    color: white;
 }
 
-@media only screen and (min-width: 1200px) {
-    .welcome {
-        font-size: 250px;
-        margin-left: 40%;
-        margin-top: 0px;
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+footer img {
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+@media only screen and (max-width: 550px) {
+    .nav {
+        height: 30vh;
+        font-size: 8vmin;
     }
-}
+
+    .question {
+        width: 85%;
+    }
+  }
