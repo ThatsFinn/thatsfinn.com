@@ -22,6 +22,7 @@ body {
     font-size: 60px;
     text-align: right;
     color: white;
+    background-color: black;
 
     width: 90%;
     height: 60%;
@@ -57,8 +58,10 @@ a {
 
 footer {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    background-color: black;
 }
 
 footer img {
@@ -69,10 +72,18 @@ footer img {
 @media only screen and (max-width: 670px) {
     .nav {
         height: 30vh;
-        font-size: 40px;
+        font-size: 8vw;
     }
 
     .question {
         width: 85%;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    footer img {
+        padding-right: 20px;
     }
   }
