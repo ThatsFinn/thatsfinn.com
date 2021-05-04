@@ -19,12 +19,12 @@ body {
 
 .nav {
     font-family: 'Inter', sans-serif;
-    font-size: 6vmin;
+    font-size: 60px;
     text-align: right;
     color: white;
 
     width: 90%;
-    height: 40%;
+    height: 60%;
 }
 
 h1 {
@@ -66,10 +66,10 @@ footer img {
     padding-right: 60px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 670px) {
     .nav {
         height: 30vh;
-        font-size: 8vmin;
+        font-size: 40px;
     }
 
     .question {
