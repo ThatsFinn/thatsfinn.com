@@ -5,7 +5,8 @@
     margin: 0px;
 }
 
-body {
+html, body { 
+    height: 100%; 
     background-color: rgb(255, 110, 236);
 }
 
@@ -24,7 +25,7 @@ body {
     color: white;
 
     width: 90%;
-    height: 60%;
+    height: 35%;
 }
 
 h1 {
